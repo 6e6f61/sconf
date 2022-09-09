@@ -1,0 +1,29 @@
+(config
+	(title 'sconf example')
+	(owner
+		(name 'Not Tom Preston-Werner')
+		(dob
+			(year 1979)
+			(month 05)
+			(day 27)))
+	(database
+		(server '192.168.1.1')
+		(ports (
+			8000
+			8001
+			8002))
+		(connection_max 5000)
+		(enabled :yes))
+	(servers
+		(alpha
+			(ip '10.0.0.1')
+			(dc 'eqdc10'))
+			(description 'Some super really important server.
+So important that it requires a multi-line string to explain.')
+		(beta
+			(ip '10.0.0.2')
+			(dc 'eqdc10')))
+	(clients
+		(data (('gamma' 'delta') (1 2)))
+	(hosts ('alpha' 'omega'))
+)
