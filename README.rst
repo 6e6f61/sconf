@@ -14,6 +14,7 @@ Example
 -------
 
 .. code-block:: c
+
 	#include "sconf.h"
 
 	struct config_example {
